@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/signInFragment">
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.practica10.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/signOutFragment"
+        android:name="com.example.practica10.SignOutFragment"
+        android:label="Sing Out"
+        tools:layout="@layout/fragment_sign_out" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.practica10.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.practica10.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.practica10.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="com.example.practica10.newPostFragment"
+        android:label="New Post"
+        tools:layout="@layout/fragment_new_post" />
+    <fragment
+        android:id="@+id/mediaFragment"
+        android:name="com.example.practica10.MediaFragment"
+        android:label="Media"
+        tools:layout="@layout/fragment_media" />
+    <fragment
+        android:id="@+id/editPost"
+        android:name="com.example.practica10.EditPost"
+        android:label="Edit Post"
+        tools:layout="@layout/fragment_edit_post" />
+    <fragment
+        android:id="@+id/bookMarksFragment"
+        android:name="com.example.practica10.BookMarksFragment"
+        android:label="Book Marks"
+        tools:layout="@layout/fragment_book_marks" />
+</navigation>
