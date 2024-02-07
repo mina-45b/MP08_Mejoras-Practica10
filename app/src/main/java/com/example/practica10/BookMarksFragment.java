@@ -41,11 +41,6 @@ public class BookMarksFragment extends HomeFragment {
         // Obtener el adaptador de la RecyclerView
         PostsAdapter postsAdapter = (PostsAdapter) postsRecyclerView.getAdapter();
 
-        // Ocultar likes y bookmarks
-        if (postsAdapter != null) {
-            postsAdapter.setShowLikesAndBookmarks(false);
-            postsAdapter.notifyDataSetChanged();
-        }
 
     }
 
