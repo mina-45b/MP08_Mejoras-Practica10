@@ -79,11 +79,7 @@ public class HomeFragment extends Fragment {
     public class PostsAdapter extends FirestoreRecyclerAdapter<Post, PostsAdapter.PostViewHolder> {
         public PostsAdapter(@NonNull FirestoreRecyclerOptions<Post> options) {super(options);}
 
-        private boolean showLikesAndBookmarks = true;
-
-        public void setShowLikesAndBookmarks(boolean show) {
-            this.showLikesAndBookmarks = show;
-        }
+        
 
         @NonNull
         @Override
@@ -95,22 +91,7 @@ public class HomeFragment extends Fragment {
         protected void onBindViewHolder(@NonNull PostViewHolder holder, int position, @NonNull final Post post) {
 
 
-            // Gestion de likes
-            if (showLikesAndBookmarks) {
-                // Mostrar likes y bookmarks
-                holder.likeImageView.setVisibility(View.VISIBLE);
-                holder.bookmarkImageView.setVisibility(View.VISIBLE);
-                holder.editImageView.setVisibility(View.VISIBLE);
-                holder.deleteImageView.setVisibility(View.VISIBLE);
-                holder.numLikesTextView.setVisibility(View.VISIBLE);
-            } else {
-                // Ocultar likes y bookmarks
-                holder.likeImageView.setVisibility(View.GONE);
-                holder.bookmarkImageView.setVisibility(View.GONE);
-                holder.editImageView.setVisibility(View.GONE);
-                holder.deleteImageView.setVisibility(View.GONE);
-                holder.numLikesTextView.setVisibility(View.GONE);
-            }
+    
 
 
 
